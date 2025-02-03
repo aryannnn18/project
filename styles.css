@@ -6,9 +6,7 @@
 }
 body 
 {
-background: #FF0099;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-color: #000;
 color: #fff;
 }
 .container
@@ -20,16 +18,24 @@ header
  
   height: 100vh;
   width: 100%;
- background-image: url(C:\Users\healt\Downloads\undraw_developer-activity_dn7p.svg);
-  background-size: cover;
-  background-position: center;  
+ position: relative;
+ overflow: hidden;
+}
+#header-video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .nav
 {
   display: flex ;
   justify-content:  space-between  ;
   align-items:  center;
-  border-radius: 15px;
 }
 .nav ul li
 {
@@ -52,7 +58,7 @@ header
 }
 .nav ul li a:hover
 {
-  color:#F2C0DD ;
+  color:#209e9e ;
  
 }
 .nav ul li:hover{
@@ -72,8 +78,8 @@ header
 .nav-btn:hover
 {
   transform: scale(0.9);
-  background-color: #F2C0DD;
-  color: #000000;
+  background-color: #209e9e;
+  color: #FFF;
 
 }
 .nav h1
@@ -107,8 +113,8 @@ section p
 }
 .section-btn
 {
-  background-color: #F2C0DD;
-  color: #000;
+  background-color: #209e9e;
+  color: #FFF;
   border: none;
   padding: 6px 15px;
   font-size: 17px;
@@ -131,7 +137,7 @@ section p
   padding-bottom: 60px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color:#F2C0DD ;
+  background-color:#209e9e;
   position: absolute;
   display: flex;
   justify-content: center ;
@@ -177,14 +183,14 @@ section p
 }
 .pop-input button
 {
-  background-color: #69294f;
+  background-color: #000;
   color: #fff;
 }
 .section-btn-2
 {
   background-color: transparent;
-  color: #F2C0DD;
-  border: 1px solid #F2C0DD;
+  color: #209e9e;
+  border: 1px solid #209e9e;
   padding: 6px 15px;
   font-size: 17px;
   font-weight: 200;
@@ -214,7 +220,7 @@ section p
 .icons i:hover
 {
   transform: translateY(-10px) scale(1.1);
-  color: #F2C0DD;
+  color: #209e9e;
   opacity: 0.8;
 }
 
@@ -260,8 +266,8 @@ flex-wrap: wrap;
 }
 .hero-btn
 {
-  background-color:#F2C0DD ;
-  color: #000;
+  background-color:#209e9e ;
+  color: #FFF;
   padding: 6px 22px;
   border: none;
   margin-top: 12px;
@@ -300,8 +306,8 @@ flex-wrap: wrap;
 }
 .hero-btn-2
 {
-  background-color: #F2C0DD;
-  color: #000;
+  background-color:#209e9e;
+  color: #FFF;
   border: none;
   padding: 6px 22px;
   border-radius: 50px;
@@ -350,9 +356,9 @@ flex-wrap: wrap;
 {
   font-size: 10px;
   padding: 25px;
-  background-color:#F2C0DD ;
+  background-color:#209e9e ;
   margin-bottom: 15px;
-  color: #000;
+  color: #FFF;
   font-weight: 300;
 }
 .hero-text-3 button
@@ -361,8 +367,8 @@ flex-wrap: wrap;
   border-radius: 50px;
   border: none;
   margin-top: 15px;
-  background-color:#F2C0DD ;
-  color: #333333;
+  background-color:#209e9e ;
+  color: #FFF;
   transition: 0.3s;
   cursor: pointer ;
   font-weight: 500;
@@ -398,9 +404,9 @@ flex-wrap: wrap;
 .hero-section-4 div
 {
   flex-basis: 32%;
-  background-color: #F2C0DD;
+  background-color: #209e9e;
   border-radius: 10px;
-  color: #333333;
+  color: #FFF;
   padding: 40px;
   transition: 0.3s  ;
 
@@ -473,7 +479,8 @@ flex-wrap: wrap;
 
 .footer
 {
-  background-color: #523044;
+  background-color: #transparent;
+  border-top: 1px solid #209e9e;
 }
 .footer-section
 {
@@ -514,8 +521,8 @@ flex-wrap: wrap;
 }
 .footer-sec-1 button:hover
 {
- background-color:#F2C0DD ;
- color: black;
+ background-color:#209e9e;
+ color: fff;
 }
 .social-icon
 {
@@ -524,7 +531,7 @@ flex-wrap: wrap;
 .social-icon a i:hover
 {
   transform: translateY(-10px);
-  color:#F2C0DD ;
+  color:#209e9e ;
 }
 .social-icon a 
 {
@@ -560,7 +567,7 @@ flex-wrap: wrap;
 }
 .footer-sec-2 ul li a:hover
 {
-  color: #F2C0DD ;
+  color: #209e9e ;
   }
 .footer-sec-2 ul li:hover
 {
@@ -587,7 +594,7 @@ flex-wrap: wrap;
 }
 .footer-sec-3 p i 
 {
-  color: #F2C0DD;
+  color: #209e9e;
 }
 .copyright
 {
@@ -597,7 +604,7 @@ flex-wrap: wrap;
 }
 .copyright i 
 {
-  color: #F2C0DD ;
+  color:#209e9e ;
 } 
 
 
@@ -607,6 +614,11 @@ flex-wrap: wrap;
 .container
 {
   margin: 0px 5%;
+  position: relative;
+}
+header
+{
+  position: relative;
 }
 .nav h1
 {
@@ -618,10 +630,40 @@ font-size: 28px;
 {
   margin-top: 10px;
   margin-bottom: 10px ;
+  position: relative;
+}
+header section
+
+{
+  z-index: -1;
 }
 .nav ul
 {
-  display: none;
+  
+  position: fixed ;
+  right: -200px;
+  top: 0;
+  background-color:#209e9e ;
+  padding-top: 50px;
+  width: 200px;
+  height: 100vh;
+  z-index: 1;
+}
+.nav ul li
+{
+  display: block;
+  margin: 25px;
+}
+.nav ul li a {
+color: black;
+}
+.nav ul .fa-solid
+{
+  position: absolute;
+  top: 25px;
+  left: 42px;
+  cursor: pointer;
+  color: black;
 }
 .nav button
 {
@@ -680,8 +722,8 @@ section p
 }
 .hero-btn
 {
-  background-color:#F2C0DD ;
-  color: #000;
+  background-color: #209e9e ;
+  color: #fff;
   padding: 6px 22px;
   border: none;
   margin-top: 15px;
@@ -741,8 +783,8 @@ section p
   border-radius: 50px;
   border: none;
   margin-top: 15px;
-  background-color:#F2C0DD ;
-  color: #333333;
+  background-color: #209e9e ;
+  color: #fff;
   transition: 0.3s;
   cursor: pointer ;
   font-weight: 500;
@@ -776,9 +818,9 @@ section p
 .hero-section-4 div
 {
   flex-basis: 32%;
-  background-color: #F2C0DD;
+  background-color: #209e9e;
   border-radius: 10px;
-  color: #333333;
+  color: #fff;
   padding: 40px;
   transition: 0.3s  ;
   margin-bottom: 15px;
